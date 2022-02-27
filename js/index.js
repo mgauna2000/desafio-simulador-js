@@ -48,7 +48,7 @@ let productoElegido1 = prompt(
   "Escriba el producto que desea: leche - azucar - chocolate - pan"
 );
 let productoElegido2 = prompt(
-  "Escriba el producto que desea: leche - azucar - chocolate - pan"
+  "Escriba otro producto diferente: leche - azucar - chocolate - pan"
 );
 costoTotal(productoElegido1, productoElegido2);
 //   if (productoElegido == "leche") {
