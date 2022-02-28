@@ -1,9 +1,11 @@
+// creamos una funcion para calcular el total de productos elegidos por un usuario
 function costoTotal() {
+  // valor de los productos
   let leche = 100;
   let azucar = 60;
   let chocolate = 50;
   let pan = 40;
-
+  // condicion al elegir 2 productos y sumar su valor total
   if (
     (productoElegido1 == "leche" && productoElegido2 == "azucar") ||
     (productoElegido1 == "azucar" && productoElegido2 == "leche")
@@ -44,45 +46,12 @@ function costoTotal() {
     alert("Elija productos validos");
   }
 }
+// preguntamos al usuario que productos desea
 let productoElegido1 = prompt(
   "Escriba el producto que desea: leche - azucar - chocolate - pan"
 );
 let productoElegido2 = prompt(
   "Escriba otro producto diferente: leche - azucar - chocolate - pan"
 );
+// llamamos a la funcion, pasandole lo elegido por el usuario
 costoTotal(productoElegido1, productoElegido2);
-//   if (productoElegido == "leche") {
-//     let leche = productoElegido;
-//     leche = 100;
-//     alert(leche);
-//   }else if (productoElegido == "azucar") {
-//     let azucar = productoElegido;
-//     azucar = 60;
-//     alert(azucar);
-//   }else if (productoElegido == "chocolate") {
-//     let chocolate = productoElegido;
-//     chocolate = 50;
-//     alert(chocolate);
-//   }else if (productoElegido == "pan") {
-//     let pan = productoElegido;
-//     pan = 40;
-//     alert(pan);
-//   }else if (productoElegido == "jugo") {
-//     let jugo = productoElegido;
-//     jugo = 15;
-//     alert(jugo);
-//   }else{
-//       alert("eliga un producto")
-//   }
-
-//   if (productoElegido == leche && productoElegido == pan) {
-//       let sumar = leche + pan;
-//       alert(sumar)
-//   }
-
-// }
-
-// let productoElegido = prompt(
-//   "Elige 2 productos: leche,azucar,chocolate,pan o jugo"
-// );
-// costoTotal(productoElegido);
