@@ -7,10 +7,7 @@ const arrayProductos = [
 const nuevoProducto = prompt("Nombre del producto");
 const nuevoPrecioProducto = parseFloat(prompt("Precio del producto"));
 
-const nombreProducto = nuevoProducto;
-console.log(nuevoProducto);
-
-arrayProductos.push({producto:+nombreProducto, precio:+nuevoPrecioProducto});
+arrayProductos.push({producto: nuevoProducto, precio: nuevoPrecioProducto});
 
 
 console.log(arrayProductos);

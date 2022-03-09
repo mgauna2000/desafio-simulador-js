@@ -68,6 +68,8 @@ const arrayProductos = [
 arrayProductos.push({producto: "queso", precio: 70});
 arrayProductos.unshift({producto: "mayonesa", precio: 30});
 
-
-console.log(arrayProductos);
+for (const productos of arrayProductos) {
+  console.log("el producto es: " +productos.producto);
+  console.log("el precio es: " +productos.precio);
+}
 // console.log(arrayProductos);
