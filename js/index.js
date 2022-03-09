@@ -49,11 +49,25 @@ function costoTotal(primerProducto, segundoProducto) {
 }
 }
 // preguntamos al usuario que productos desea
-let productoElegido1 = prompt(
-  "Escriba el producto que desea: leche - azucar - chocolate - pan"
-);
-let productoElegido2 = prompt(
-  "Escriba otro producto diferente: leche - azucar - chocolate - pan"
-);
+// let productoElegido1 = prompt(
+//   "Escriba el producto que desea: leche - azucar - chocolate - pan"
+// );
+// let productoElegido2 = prompt(
+//   "Escriba otro producto diferente: leche - azucar - chocolate - pan"
+// );
 // llamamos a la funcion, pasandole lo elegido por el usuario
-costoTotal(productoElegido1, productoElegido2);
+// costoTotal(productoElegido1, productoElegido2);
+
+const arrayProductos = [
+  { producto: "leche", precio: 100 },
+  { producto: "azucar", precio: 60 },
+  { producto: "chocolate", precio: 50 },
+  { producto: "pan", precio: 40 },
+];
+
+arrayProductos.push({producto: "queso", precio: 70});
+arrayProductos.unshift({producto: "mayonesa", precio: 30});
+
+
+console.log(arrayProductos);
+// console.log(arrayProductos);
