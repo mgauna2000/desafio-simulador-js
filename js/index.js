@@ -1,50 +1,52 @@
 // creamos una funcion para calcular el total de productos elegidos por un usuario
-function costoTotal() {
+function costoTotal(primerProducto, segundoProducto) {
   // valor de los productos
   let leche = 100;
   let azucar = 60;
   let chocolate = 50;
   let pan = 40;
   // condicion al elegir 2 productos y sumar su valor total
+  while (primerProducto != "ESC" || segundoProducto != "ESC") {
   if (
-    (productoElegido1 == "leche" && productoElegido2 == "azucar") ||
-    (productoElegido1 == "azucar" && productoElegido2 == "leche")
+    (primerProducto == "leche" && segundoProducto == "azucar") ||
+    (primerProducto == "azucar" && segundoProducto == "leche")
   ) {
     let sumar = leche + azucar;
     alert("El total a pagar de los productos elegidos es $" + sumar);
   } else if (
-    (productoElegido1 == "leche" && productoElegido2 == "chocolate") ||
-    (productoElegido1 == "chocolate" && productoElegido2 == "leche")
+    (primerProducto == "leche" && segundoProducto == "chocolate") ||
+    (primerProducto == "chocolate" && segundoProducto == "leche")
   ) {
     let sumar = leche + chocolate;
     alert("El total a pagar de los productos elegidos es $" + sumar);
   } else if (
-    (productoElegido1 == "leche" && productoElegido2 == "pan") ||
-    (productoElegido1 == "pan" && productoElegido2 == "leche")
+    (primerProducto == "leche" && segundoProducto == "pan") ||
+    (primerProducto == "pan" && segundoProducto == "leche")
   ) {
     let sumar = leche + pan;
     alert("El total a pagar de los productos elegidos es $" + sumar);
   } else if (
-    (productoElegido1 == "azucar" && productoElegido2 == "chocolate") ||
-    (productoElegido1 == "chocolate" && productoElegido2 == "azucar")
+    (primerProducto == "azucar" && segundoProducto == "chocolate") ||
+    (primerProducto == "chocolate" && segundoProducto == "azucar")
   ) {
     let sumar = azucar + chocolate;
     alert("El total a pagar de los productos elegidos es $" + sumar);
   } else if (
-    (productoElegido1 == "azucar" && productoElegido2 == "pan") ||
-    (productoElegido1 == "pan" && productoElegido2 == "azucar")
+    (primerProducto == "azucar" && segundoProducto == "pan") ||
+    (primerProducto == "pan" && segundoProducto == "azucar")
   ) {
     let sumar = azucar + pan;
     alert("El total a pagar de los productos elegidos es $" + sumar);
   } else if (
-    (productoElegido1 == "chocolate" && productoElegido2 == "pan") ||
-    (productoElegido1 == "pan" && productoElegido2 == "chocolate")
+    (primerProducto == "chocolate" && segundoProducto == "pan") ||
+    (primerProducto == "pan" && segundoProducto == "chocolate")
   ) {
     let sumar = chocolate + pan;
     alert("El total a pagar de los productos elegidos es $" + sumar);
   } else {
     alert("Elija productos validos");
   }
+}
 }
 // preguntamos al usuario que productos desea
 let productoElegido1 = prompt(
