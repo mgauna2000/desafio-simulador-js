@@ -65,14 +65,18 @@ const arrayProductos = [
   { producto: "chocolate", precio: 50 },
   { producto: "pan", precio: 40 },
 ];
-// agregamos otro producto con el metodo push al array de productos
-arrayProductos.push({producto: "queso", precio: 70});
-// y agregamos un nuevo elemento al principio del array utilizando unshift
+// declaramos un array vacio para agregarles los nuevos productos
+const nuevosProductos = [];
+// agregamos productos nuevos con el metodo push al array de nuevosProductos
+nuevosProductos.push({producto: "queso", precio: 70}, {producto: "fideos", precio: 45});
+// y agregamos un nuevo elemento al principio del arrayProductos utilizando unshift
 arrayProductos.unshift({producto: "mayonesa", precio: 30});
+//conbinamos los dos arrays con el metodo concat para que solo quede un array
+//del todos los productos
+const totalProductos = arrayProductos.concat(nuevosProductos);
 //recorremos el array con la sentencia for of, para mostrar en consola
 //cada producto y su precio
-for (const productos of arrayProductos) {
+for (const productos of totalProductos) {
   console.log("el producto es: " +productos.producto);
   console.log("el precio es: " +productos.precio);
 }
-// console.log(arrayProductos);
