@@ -58,16 +58,19 @@ function costoTotal(primerProducto, segundoProducto) {
 // llamamos a la funcion, pasandole lo elegido por el usuario
 // costoTotal(productoElegido1, productoElegido2);
 
+// creamos un array de varios productos con su precio
 const arrayProductos = [
   { producto: "leche", precio: 100 },
   { producto: "azucar", precio: 60 },
   { producto: "chocolate", precio: 50 },
   { producto: "pan", precio: 40 },
 ];
-
+// agregamos otro producto con el metodo push al array de productos
 arrayProductos.push({producto: "queso", precio: 70});
+// y agregamos un nuevo elemento al principio del array utilizando unshift
 arrayProductos.unshift({producto: "mayonesa", precio: 30});
-
+//recorremos el array con la sentencia for of, para mostrar en consola
+//cada producto y su precio
 for (const productos of arrayProductos) {
   console.log("el producto es: " +productos.producto);
   console.log("el precio es: " +productos.precio);
